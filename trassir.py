@@ -61,10 +61,5 @@ class Trassir():
         token = self.getToken(channel, 'flv', 'main')
         return self.url_video + token
 
-    def getAuto(self):
-        params = {'sid': self.sid}
-        r = requests.get(self.url + '/lpr_events/', params, verify=self.verify)
-        print(r.content)
-        # rep = json.loads(r.content)
-        # return rep['token']
+
 
